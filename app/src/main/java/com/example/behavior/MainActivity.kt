@@ -1,8 +1,10 @@
 package com.example.behavior
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.behavior.bottomsheet.BottomSheetActivity
 import com.example.behavior.bottomsheet.MyBottomSheetDialog
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun goTest() {
-//        startActivity(Intent(this, BottomSheetActivity::class.java))
-        showBottomSheetDialog()
+        startActivity(Intent(this, BottomSheetActivity::class.java))
+//        showBottomSheetDialog()
     }
 
 
